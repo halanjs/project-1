@@ -8,11 +8,33 @@
     --color-gainsboro:#DCDCDC;
     --color-Tastefully_Made_Mint_Julep:#CFF5CB;
     --color-lightyello:#FFFFE0;
+
     /* Font Size */
     --font-large: 48px;
     --font-medium: 28px;
-    /*Font weight */
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-mocro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
 
     /* size */
 
+}
+
+/* Universal tage */
+*{
+    box-sizing: border-box;
+}
+
+/* Typography */
+h1{
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    
 }
