@@ -7,7 +7,7 @@
     --color-black:#000000;
     --color-gainsboro:#DCDCDC;
     --color-Tastefully_Made_Mint_Julep:#CFF5CB;
-    --color-lightyello:#FFFFE0;
+    --color-lightyellow:#FFFFE0;
 
     /* Font Size */
     --font-large: 48px;
@@ -43,8 +43,11 @@ a{
 }
 
 ul{
-    list-style: none;
     padding-left: 0;
+}
+
+li {
+    list-style: none;
 }
 
 /* Typography */
@@ -84,7 +87,7 @@ p{
     background-color: var(--color-beige);
     align-items: center;
     color: var(--color-black);
-    padding: 16px;
+    padding: 10px;
 }
 
 .navbar__menu {
@@ -104,5 +107,25 @@ p{
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-lightyello);
+    background-color: var(--color-lightyellow);
 }
+
+/* Home */
+#home {
+    background: url('imgs/home-backgroung.png') center/cover no-repeat;
+    padding:40px;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.home__title,
+.home__description {
+    color: var(--color-black);
+}
+
