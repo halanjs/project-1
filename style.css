@@ -8,6 +8,7 @@
     --color-gainsboro:#DCDCDC;
     --color-Tastefully_Made_Mint_Julep:#CFF5CB;
     --color-lightyellow:#FFFFE0;
+    --color-lightgreen:#BFE7B5;
 
     /* Font Size */
     --font-large: 48px;
@@ -48,6 +49,13 @@ ul{
 
 li {
     list-style: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 /* Typography */
@@ -112,7 +120,7 @@ p{
 
 /* Home */
 #home {
-    background: url('imgs/home-backgroung.png') center/cover no-repeat;
+    background: url('imgs/home-backgraound.png') center/cover no-repeat;
     padding:40px;
     text-align: center;
 }
@@ -127,5 +135,20 @@ p{
 .home__title,
 .home__description {
     color: var(--color-black);
+}
+
+.home__contact {
+    color: var(--color-black);
+    font-size: var(--font-regular);
+    font-weight: var(--font-border);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-black);
+    border-radius: var(--size-bold);
+    border-radius: 4px;
+}
+
+.home__contact:hover {
+    background-color: var(--color-lightyellow);
 }
 
