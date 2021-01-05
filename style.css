@@ -9,6 +9,9 @@
     --color-Tastefully_Made_Mint_Julep:#CFF5CB;
     --color-lightyellow:#FFFFE0;
     --color-lightgreen:#BFE7B5;
+    --color-darkgreen: #75C996;
+    --color-purple: #AB77CB;
+    --color-limegreen: #AED92A;
 
     /* Font Size */
     --font-large: 48px;
@@ -25,6 +28,9 @@
 
     /* size */
     --size-bolder-radius: 4px;
+
+    /* animation */
+    --animation-direction: 650ms;
 }
 
 /* Universal tage */
@@ -148,7 +154,55 @@ p{
     border-radius: 4px;
 }
 
-.home__contact:hover {
-    background-color: var(--color-lightyellow);
+
+/* Section common */
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
 }
+
+/* About */
+.about__majors {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    margin: auto;
+    color: var(--color-gainsboro);
+    border: 1px solid var(--color-gainsboro);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.major__icon i {
+    transition: all var(--animation-direction) ease;
+}
+
+.major__icon:hover i {
+    color: var(--color-darkgreen);
+    transform: scale(1.15);
+}
+
+.major__title {
+    font-weight: var(--weight-semi-bold);
+    color: black;
+}
+
+.major__description {
+    color: darkgrey;
+}
+
+.major__description{
+    font-size: var(--font-small);
+}
+
+
 
