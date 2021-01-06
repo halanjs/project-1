@@ -98,7 +98,7 @@ p{
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-beige);
+    background-color: var(--color-lightgreen);
     align-items: center;
     color: var(--color-black);
     padding: 10px;
@@ -121,7 +121,7 @@ p{
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-lightyellow);
+    background-color: rgba(141, 228, 141, 0.753);
 }
 
 /* Home */
@@ -159,8 +159,13 @@ p{
 .section {
     padding: 50px;
     text-align: center;
+    margin: auto;
+}
+
+.section__container {
     max-width: 1200px;
     margin: auto;
+    text-align: center;
 }
 
 /* About */
@@ -184,6 +189,7 @@ p{
 
 .major__icon i {
     transition: all var(--animation-direction) ease;
+    radius: 2px solid var(--color-darkgreen);
 }
 
 .major__icon:hover i {
@@ -203,6 +209,98 @@ p{
 .major__description{
     font-size: var(--font-small);
 }
+
+/* Skill */
+
+#skills {
+    background-color: var(--color-aliceblue);
+}
+
+.skillset {
+    display: flex;
+    background-color: var(--color-gainsboro);
+    margin: 20px 0;
+}
+
+.skillset__title1 {
+    color: var(--color-white);
+    font-weight: var(--weight-semi-bold);
+}
+
+.skillset__title2
+.skillset__title3 {
+    font-weight: var(--weight-bold);
+}
+
+.skill__description {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+}
+
+.skillset__left {
+    flex-basis: 60%;
+    background-color: rgba(78, 78, 78, 0.651);
+    padding: 20px 40px; 
+}
+
+.skill {
+    margin-bottom: 8px;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-gainsboro);
+}
+
+.skill__value {
+    height: 5px;
+    background-color: rgb(245, 220, 77);
+}
+
+.skillset__right {
+    flex-basis: 40%;
+}
+
+.tools {
+    background-color: rgb(192, 192, 192);
+}
+
+.skillset__title2,
+.skillset__title3 {
+    font-weight: var(--weight-semi-bold);
+}
+
+.etc {
+    background-color: rgba(218, 214, 214, 0.938);
+  }
+
+.tools,
+.etc {
+    padding: 20px;
+}
+/* comment */
+
+#comment {
+    background-color: var(--color-lightgreen);
+  }
+  
+  .comment__title,
+  .comment__email,
+  .comment__rights {
+    color: var(--color-black);
+  }
+  
+  .comment__title {
+    margin: 16px 0;
+    font-weight: var(--weight-semi-bold);
+  }
+  
+  .comment__icon i:hover {
+    transform: scale(1.1);
+    color: var(--color-yellow);
+  }
 
 
 
