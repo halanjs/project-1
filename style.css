@@ -113,6 +113,7 @@ p{
     margin: 0 4px;
     cursor: pointer;
     border-radius: var(--size-bolder-radius);
+    text-align: right;
 }
 
 .navbar__menu__item.active {
@@ -122,6 +123,15 @@ p{
 
 .navbar__menu__item:hover {
     background-color: rgba(141, 228, 141, 0.753);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-black);
+  display: none;
 }
 
 /* Home */
@@ -301,5 +311,43 @@ p{
     color: var(--color-yellow);
   }
 
-
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+      display: block;
+    }
+  
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar__menu {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      display: none;
+    }
+  
+    .about__majors {
+      flex-direction: column;
+    }
+  
+    .major {
+      margin-bottom: 38px;
+    }
+  
+    .skillset {
+      flex-direction: column;
+    }
+  
+    .project {
+      flex-grow: 1;
+    }
+  
+    .testimonial__avatar {
+      width: 80px;
+      height: 80px;
+    }
+  }
 
