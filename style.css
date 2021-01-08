@@ -189,7 +189,6 @@ p{
 
 .major__icon i {
     transition: all var(--animation-direction) ease;
-    radius: 2px solid var(--color-darkgreen);
 }
 
 .major__icon:hover i {
