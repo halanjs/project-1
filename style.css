@@ -96,12 +96,25 @@ p{
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-lightgreen);
+    background-color: transparent;
     align-items: center;
-    color: var(--color-black);
-    padding: 10px;
+    padding: 16px;
+    transition: all var(--animation-direction) ease-in-out;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-lightgreen);;
+    padding: 1px;
+}
+
+.navbar__logo {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    padding: 4px 6px;
 }
 
 .navbar__menu {
@@ -109,8 +122,8 @@ p{
 }
 
 .navbar__menu__item {
-    padding: 8px 12px;
-    margin: 0 4px;
+    padding: 4px 6px;
+    margin: 0px 4px;
     cursor: pointer;
     border-radius: var(--size-bolder-radius);
     text-align: right;
@@ -127,9 +140,9 @@ p{
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 24px;
-  right: 32px;
-  font-size: 24px;
+  top: 18px;
+  right: 36px;
+  font-size: 20px;
   color: var(--color-black);
   display: none;
 }
@@ -138,6 +151,7 @@ p{
 #home {
     background: url('imgs/home-backgraound.png') center/cover no-repeat;
     padding:40px;
+    padding-top: 120px;
     text-align: center;
 }
 
