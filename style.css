@@ -141,7 +141,7 @@ p{
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 12px;
+  top: 24px;
   right: 36px;
   font-size: 20px;
   color: var(--color-black);
@@ -349,6 +349,14 @@ p{
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {
+        /* Font Size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-mocro: 12px;
+    }
     .navbar__toggle-btn {
       display: block;
     }
@@ -372,6 +380,11 @@ p{
 
     .navbar__menu.open {
         display: block;
+    }
+
+    .section {
+        padding: 16px;
+        padding-top: 50px;
     }
   
     .about__majors {
